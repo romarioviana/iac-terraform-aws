@@ -16,9 +16,15 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-0ecc74eca1d66d8a6"
   instance_type = "t2.micro"
-  key_name = "isc-chave-nuvem"
+  key_name      = "isc-chave-nuvem"
+#  user_data     =  <<-EOF
+#		       #!/bin/bash	
+#		       cd /home/ubuntu
+#                       echo "<h1>Hello wold. Criado pelo Terraform 2!</h1>" > index.html
+#		       nohup busybox httpd -f -p 8080 & 
+#		       EOF
   tags = {
-    Name = "PrimeiraInstancia"
+    Name = "InstanciaAwsTerraform"
   }
 }
 

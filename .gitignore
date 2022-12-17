@@ -2,7 +2,7 @@
 # Local .terraform directories
 **/.terraform/*
 
-# .tfstate files
+# .tfstate files, cada máquina deve manter e controlar os seus state o terraform 
 *.tfstate
 *.tfstate.*
 
@@ -30,3 +30,4 @@ terraform.rc
 
 #Não compatilhar as chaves de acesso
 *.pem
+
