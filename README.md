@@ -2,12 +2,15 @@
 
 Esse projeto é um Lab de IaC (Infrastructure as Code) com as tecnologia Terraform, Ansibe, AWS e Linux ubuntu.
 
-O objetivo do Lab é gerenciar e controlar a sua infraestrutura, seja ambiente de desenvolvimento ou em ambiente de produção, através de código de forma prática, objetiva e muito mais simples com as ferramentas Terraform, Ansible e AWS.
+Objetivo é criar infraestrutura na EC2 da AWS, utilizado o Terraform para criar a instância do servidor (SO ubuntu) na EC2. E para provisionar o servidor foi utilizado o Ansible na criação de um servidor Python3 com todas as sua dependências (Virtualenv, Django, Django rest) e na configuração do hosts do Python para permite o acesso de qualquer IP. 
+Assim, teremos o ambiente preparado e configurado através de código de forma prática, objetiva e simpla, para que o desenvolver possa subir a sua Python.
 
-Informativo
+
+Informativo:
 * [Terraform]: é uma ferramenta de software de infraestrutura como configuração de código aberto criada pela HashiCorp.
 * [Ansible]: é um conjunto de ferramentas de software que permite infraestrutura como código. É de código aberto e o pacote inclui provisionamento de software, gerenciamento de configuração e funcionalidade de implantação de aplicativos.
 * Windows Subsystem for Linux (WSL): Instalar o WSL no Windows 10, permiti uma instancia do Linux rodando no Windows, acessando os arquivos e facilitando a vida de desenvolvedores e administradores de sistemas.
+* Não esquecer de remover as instâncias na ECE da AWS após os testes para evitar cobrança indesejadas. 
 
 
 # Preparando o ambiente
