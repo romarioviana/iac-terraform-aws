@@ -13,6 +13,7 @@ Informativo:
 * Não esquecer de remover as instâncias na ECE da AWS após os testes para evitar cobrança indesejadas. 
 
 
+
 # Preparando o ambiente
 
 * Script ambiente-terraform.sh - Preparação ambiente Terraform - Ansible - Linux Ubutun
@@ -68,7 +69,8 @@ Informativo:
     aws configure
   ```
   
-  
+
+
 # Inicializando o Terraform
 
 * Entrar na home do usuário e fazer o clone do projeto
@@ -99,7 +101,20 @@ Agora o próximo comando irá executar e aplicar o plano com as configuraçõe. 
 ```sh
   terraform apply
 ```
-  
+
+
+
+# Contribuindo
+As contribuições são o que torna a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer são muito apreciadas.
+
+Se você tiver uma sugestão para melhorar isso, bifurque o repositório e crie uma pull request.
+
+1. Fork o Projeto
+2. Crie o seu Branch Feature (git checkout -b feature/amazing-feature)
+3. Commit sua alterações (git commit -m 'Add some amazing-feature')
+4. Push para o Branch (git push origin feature/amazing-feature)
+5. Abra um Pull Request
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [security_credentials]: https://console.aws.amazon.com/iam/home?#/security_credentials
