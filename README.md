@@ -69,8 +69,14 @@ Informativo:
     aws configure
   ```
   
+  A AWS CLI armazena as informações de credenciais especificadas com o comando ```aws configure``` em um arquivo local chamado ```credenciais```, na pasta chamada ```.aws ``` em seu diretório home. As opções de configuração menos confidenciais especificadas com o comando ```aws configure``` são armazenadas em um arquivo local chamado ```config```, também armazenado na pasta ```.aws``` em seu diretório home.
 
-
+  Por exemplo, os arquivos gerados pela AWS CLI para um profile padrão configurado com ```aws configure``` são semelhantes ao seguinte no SO linux.
+  ```sh
+    ~/.aws/credentials
+  ```
+  Veja mais informações em [Configurando credenciais para o AWS CLI].
+  
 # Inicializando o Terraform
 
 * Entrar na home do usuário e fazer o clone do projeto
@@ -120,3 +126,4 @@ Se você tiver uma sugestão para melhorar isso, bifurque o repositório e crie 
 [security_credentials]: https://console.aws.amazon.com/iam/home?#/security_credentials
 [Terraform]: https://developer.hashicorp.com/terraform
 [Ansible]: https://www.ansible.com/
+[Configurando credenciais para o AWS CLI]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
