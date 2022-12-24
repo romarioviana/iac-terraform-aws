@@ -1,9 +1,18 @@
-# Lab IaC (Infrastructure as Code) com Terraform, Ansibe e AwS
+# Lab de IaC (Infrastructure as Code) com Terraform, Ansibe e AwS
 
-Esse projeto é um Lab de IaC (Infrastructure as Code) com as tecnologia Terraform, Ansibe, AWS e Linux ubuntu.
+Nesse Lab de **Infraestrutura como código**, iremos replicar ambientes e entender como automatizar a instalação de uma máquina, instalando as dependências necessárias através de ferramentas de provisionamento. E para isso iremos utiliza as tecnologias / ferramentas Terraform, Ansible e AWS CLI, EC2 - AWS e Linux Ubuntu.
 
-Objetivo é criar infraestrutura na EC2 da AWS, utilizado o Terraform para criar a instância do servidor (SO ubuntu) na EC2. E para provisionar o servidor foi utilizado o Ansible na criação de um servidor Python3 com todas as sua dependências (Virtualenv, Django, Django rest) e na configuração do hosts do Python para permite o acesso de qualquer IP. 
-Assim, teremos o ambiente preparado e configurado através de código de forma prática, objetiva e simpla, para que o desenvolver possa subir a sua Python.
+O objetivo é criar uma instância de uma máquina no EC2 da AWS com o sistema operacional Ubuntu, configurar as chaves de segurança da EC2 para permitir o acesso a instância no EC2 via SSH, acessar a instância via SSH, montar um servidor Python2 e suas dependências (Virtualenv, Django, Django rest) em um ambiente virtualizado, configura o hosts do Django para permitir o acesso de qualquer IP e por fim, acessar o acessar a página de boas vindas do DJango na internet.
+
+O que faremos: 
+* Instalação e configuração das ferramentas Terraform, Ansible e AWS CLI;
+* Criação dos arquivos necessários para o Terroform;
+* Criação dos arquivos necessários do Ansible;
+* Criar infraestrutura na EC2 da AWS, utilizado o Terraform para criar a instância do servidor (SO ubuntu) na EC2 - AWS;
+* Configura o servidor para ser acessado via SSH.
+* Executar comandos dentro das máquinas durante a sua criação;
+* Fazer o provisionamento com o Ansible, instalando dependências e bibliotecas, modificando arquivos e executando comandos;
+* Assim, teremos o ambiente preparado e configurado através de código de forma prática, objetiva e simpla. Com gerenciamento dos pacotes e com as aplicações necessárias para o um time de desenvolvimento começar o seu trabalho que será o de desenvolver uma aplicação em ```DJango```. 
 
 
 Informativo:
@@ -62,7 +71,7 @@ Informativo:
 
 * Depois de instalar o AWS CLI, é necessário configurar as chaves de acesso.  
 
-  Caso não tenha a chave de acesso da AWS, entre no link [security_credentials], vá em “criar chave de acesso” na aba “credenciais do AWS IAM”.
+  Caso não tenha a chave de acesso da AWS, entre no link [Security credentials EC2 - AWS], vá em “criar chave de acesso” na aba “credenciais do AWS IAM”.
 
   Execute o comando para configurar a chave de acesso no AWS CLI local
   ```sh
@@ -77,37 +86,10 @@ Informativo:
   ```
   Veja mais informações em [Configurando credenciais para o AWS CLI].
   
-# Inicializando o Terraform
+  
+# Acesse a WiKi para ver como fazer esse ```Lab de IaC (Infrastructure as Code)```
 
-* Entrar na home do usuário e fazer o clone do projeto
-  ```sh
-    $ cd ~
-    $ git clone https://github.com/romarioviana/iac-terraform-aws.git
-  ```
-* Entrar no diretório iac-terraform-aws do projeto baixado.
-   ```sh
-     $ cd iac-terraform-aws
-  ```
-
-* Observer que tem os seguintes arquivos <b>main.tf</b> (arquivo com as configurações do Terraform)
-
-Podemos iniciar o Terraform com o comando abaixo, ele vai baixar algumas configurações, alguns plug-ins para podermos utilizar o nosso provedor.
-```sh
-  $ terraform init
-```
-Obs.: Só é necessário executar esse comando se alterarmos algo no bloco terraform {} do arquivo <b>main.tf</b>
-
-
-O próximo comando é para vermos o que vai acontecer quando realmente executarmos. Ele vai executar esse planejamento e exibir no os passos no terminal.
-```sh
-  terraform plan
-```
-
-Agora o próximo comando irá executar e aplicar o plano com as configuraçõe. O terraform irá criar a instância na AWS. Ele vai nos trazer a mesma tela do que vai acontecer.
-```sh
-  terraform apply
-```
-
+Na [Wiki Projeto] tem toda a documentação, onde é explicamos com detalhes todos os passos do ```Lab de IaC (Infrastructure as Code) com Terraform, Ansibe e AwS```.
 
 
 # Contribuindo
@@ -121,9 +103,20 @@ Se você tiver uma sugestão para melhorar isso, bifurque o repositório e crie 
 4. Push para o Branch (git push origin feature/amazing-feature)
 5. Abra um Pull Request
 
+---
+
+Referêncis:
+* [Wiki Projeto]
+* [Security credentials EC2 - AWS]
+* [Terraform]
+* [Ansible]
+* [Configurando credenciais para o AWS CLI]
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[security_credentials]: https://console.aws.amazon.com/iam/home?#/security_credentials
+
+[Wiki Projeto]: ../../wiki
+[Security credentials EC2 - AWS]: https://console.aws.amazon.com/iam/home?#/security_credentials
 [Terraform]: https://developer.hashicorp.com/terraform
 [Ansible]: https://www.ansible.com/
 [Configurando credenciais para o AWS CLI]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
