@@ -104,20 +104,38 @@ Se você tiver uma sugestão para melhorar isso, bifurque o repositório e crie 
 4. Push para o Branch (git push origin feature/amazing-feature)
 5. Abra um Pull Request
 
+
 ---
 
-Referêncis:
+Referências:
 * [Wiki Projeto]
+* [Documentação Terraform]
+* [Documentação Terraform para AWS]
+* [Documentação Terraform criando infrastrutura AWS]
 * [Security credentials EC2 - AWS]
 * [Terraform]
 * [Ansible]
 * [Configurando credenciais para o AWS CLI]
+* [AWS Account]
+* [AWS CLI]
+* [Instalar o Ansible]
+* [Instalar o Python ]
+
+
+:rocket::rocket::rocket:
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
 [Wiki Projeto]: ../../wiki
+[Documentação Terraform]: http://terraform.io/
+[Documentação Terraform para AWS]: https://developer.hashicorp.com/terraform/tutorials/aws-get-started
+[Documentação Terraform criando infrastrutura AWS]: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build
 [Security credentials EC2 - AWS]: https://console.aws.amazon.com/iam/home?#/security_credentials
 [Terraform]: https://developer.hashicorp.com/terraform
 [Ansible]: https://www.ansible.com/
 [Configurando credenciais para o AWS CLI]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+[AWS Account]: https://aws.amazon.com/free
+[AWS CLI]: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+[Instalar o Ansible]: https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu
+[Instalar o Python ]: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#control-node-requirements
+
