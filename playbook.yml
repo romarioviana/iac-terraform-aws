@@ -1,13 +1,13 @@
 - hosts: terraform_ansible
   tasks:
   - name: criando arquivo index
-    copy: 
+    copy:
+      src: index.html
       dest: /home/ubuntu/index.html
-      content: <h1>Hello wold!</h1></br></br><h2>Feito com ansible!!!</h2></br></br><h2>Muito legal!!!</h2>
-  
+
   - name: criando servidor http
     shell:  "nohup busybox httpd -f -p 8080 &"
-  
+
   - name: Instalando Python3 e virtualenv
     # Para fazer atualização de packages
     apt:
@@ -24,20 +24,20 @@
     # tarefa do tipo pip. PIP package-management system written in Python
     pip:
       # Ligar virtualenv
-      virtualenv: /home/ubuntu/tcc/venv
+      virtualenv: /home/ubuntu/projeto-django/venv
       # Instalar os packages Django e Django rest
       name:
         - django
         - djangorestframework
 
   - name: Iniciando Projeto  Django
-    shell: '. /home/ubuntu/tcc/venv/bin/activate; django-admin startproject setup /home/ubuntu/tcc/'
+    shell: '. /home/ubuntu/projeto-django/venv/bin/activate; django-admin startproject setup /home/ubuntu/projeto-django/'
     ignore_errors: yes
 
   - name: Alterando o host do settings
     # Para alterar uma linha em um arquivo
     lineinfile:
-      path: /home/ubuntu/tcc/setup/settings.py 
+      path: /home/ubuntu/projeto-django/setup/settings.py 
       # Expressão a ser alterada
       regexp: 'ALLOWED_HOSTS'
       # Novo valor
