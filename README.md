@@ -112,12 +112,14 @@ Referências:
 * [Documentação Terraform]
 * [Documentação Terraform para AWS]
 * [Documentação Terraform criando infrastrutura AWS]
+* [AWS Account]
+* [AWS CLI]
+* [Configurando credenciais para o AWS CLI]
 * [Security credentials EC2 - AWS]
 * [Terraform]
 * [Ansible]
-* [Configurando credenciais para o AWS CLI]
-* [AWS Account]
-* [AWS CLI]
+* [How Ansible Works ]
+* [Ansible Exercises ]
 * [Instalar o Ansible]
 * [Instalar o Python ]
 
@@ -138,4 +140,6 @@ Referências:
 [AWS CLI]: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 [Instalar o Ansible]: https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu
 [Instalar o Python ]: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#control-node-requirements
+[How Ansible Works ]: https://www.ansible.com/overview/how-ansible-works
+[Ansible Exercises ]: https://github.com/ansible/workshops/tree/devel/exercises/
 
